@@ -1,0 +1,362 @@
+@media screen and (max-width:1024px) {
+    body{
+        .container{
+            width: 100%;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+            header{
+                width: 100%;
+                .container__header{
+                    width: 100%;
+                }
+            }
+            section.banner__house{
+                width: 100%;
+                padding: 0px 10px;
+                .container__banner__house{
+                    width: 100%;
+                    .row__banner__house{
+                        .box__banner__house__text{
+                            padding-right: 10px;
+                        }
+                    }
+                }
+            }
+            section.promotion{
+                padding: 50px 10px;
+                .container__promotion{
+                    width: 100%;
+                }
+            }
+            section.choose{
+                padding: 50px 10px;
+                .container__choose{
+                    width: 100%;
+                }
+            }
+            section.testimonial{
+                padding: 50px 10px;
+                .container__testimonial{
+                    width: 100%;
+                    .row__testimonial{
+                        .box__text{
+                            .rating__testimomial{
+                                .profile__rating{
+                                    width: 70%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            footer{
+                padding: 50px 10px;
+                .container__footer{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    body{
+        .container{
+            width: 100%;
+            position: relative;
+            overflow-x: hidden;
+            min-height: 100vh;
+            header{
+                width: 100%;
+                .container__header{
+                    width: 100%;
+                }
+            }
+            section.banner__house{
+                width: 100%;
+                padding: 0px 10px;
+                .container__banner__house{
+                    width: 100%;
+                    .row__banner__house{
+                        .box__banner__house__text{
+                            padding-right: 10px;
+                        }
+                    }
+                }
+            }
+            section.promotion{
+                padding: 50px 10px;
+                .container__promotion{
+                    width: 100%;
+                }
+            }
+            section.choose{
+                padding: 50px 10px;
+                .container__choose{
+                    width: 100%;
+                }
+            }
+            section.testimonial{
+                padding: 50px 10px;
+                .container__testimonial{
+                    width: 100%;
+                    .row__testimonial{
+                        .box__text{
+                            .rating__testimomial{
+                                .profile__rating{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            footer{
+                padding: 50px 10px;
+                .container__footer{
+                    width: 100%;
+                    .row__footer{
+                        .container__list__footer{
+                            width: 500px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:570px) {
+    body{
+        .container{
+            width: 100%;
+            position: relative;
+            overflow-x: hidden;
+            min-height: 100vh;
+            header{
+                width: 100%;
+                padding: 4% 2%;
+                .container__header{
+                    width: 100%;
+                    .logo{
+                       a{
+                           position: relative;
+                           z-index: 350;
+                       }
+                    }
+                    .hamburger{
+                        width: 30px;
+                        height: 20px;
+                        position: fixed;
+                        top: 17px;
+                        right: 17px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-direction: column;
+                        z-index: 400;
+                        cursor: pointer;
+                        span.bar{
+                            width: 100%;
+                            height: 3px;
+                            background-color:  #000;
+                            border-radius: 5px;
+                            transition: 0.5s;
+                        }
+                    }
+                    .hamburger.hamburgerBar{
+                        span.bar:first-child{
+                            transform: rotate(45deg) translate(7px,7px);
+                            transition: 0.5s;
+                        }
+                        span.bar:nth-child(2){
+                            transform: translateX(20px);
+                            opacity: 0;
+                            transform: 0.5s;
+                        }
+                        span.bar:last-child{
+                            transform: rotate(-45deg) translate(5px,-5px);
+                            transition: 0.5s;
+                        }
+                    }
+                    nav.house{
+                        position: fixed;
+                        top: 0;
+                        width: 0;
+                        margin-right: 0px;
+                        right: -50%;
+                        overflow-x: hidden;
+                        min-height: 50vh;
+                        background-color: #F9FCFC;
+                        z-index: 300;
+                        transition: 0.5s;
+                        box-shadow: 2px 5px 10px rgba(0,0,0,0.19);
+                        ul.list__house{
+                            flex-direction: column;
+                            margin-top: 20%;
+                            li.list__item__house{
+                                margin: 10px 0px;
+                                padding: 5px 0px;
+                            }
+                        }
+                    }
+                    nav.house.navShow{
+                        width: 100%;
+                        right: 0%;
+                        transition: 0.5s;
+                    }
+                }
+            }
+            section.banner__house{
+                width: 100%;
+                background-position: top;
+                .container__banner__house{
+                    width: 100%;
+                    padding: 100px 0px;
+                    .row__banner__house{
+                        padding: 0px 10px;
+                        flex-direction: column-reverse;
+                        .box__banner__house__text{
+                            width: 100%;
+                            margin-top: 10%;
+                            text-align: center;
+                            h1{
+                                font-size: 35px;
+                            }
+                            span.banner__text{
+                                text-align: center;
+                            }
+                            button.btn__banner{
+                                margin: 20px auto;
+                            }
+                        }
+                        .box__slider{
+                            width: 100%;
+                            .slider__items{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            section.promotion{
+                padding: 50px 10px;
+                .container__promotion{
+                    width: 100%;
+                    .text__promotion{
+                        flex-direction: column;
+                        .text__promotion__inside{
+                            h1{
+                                font-size: 30px;
+                            }
+                            width: 100%;
+                            text-align: center;
+                        }
+                        button.btn__promotion{
+                            margin: 30px auto;
+                        }
+                    }
+                    .slider__container__promotion{
+                        width: 100%;
+                        .wrapper__promotion{
+                            width: 100%;
+                            .slider__promotion__box{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            section.choose{
+                padding: 50px 10px;
+                .container__choose{
+                    width: 100%;
+                    .row__choose{
+                        flex-direction: column;
+                        .box__choose{
+                            width: 100%;
+                            text-align: center;
+                            margin-top: 5%;
+                            span{
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+            section.testimonial{
+                padding: 50px 10px;
+                .container__testimonial{
+                    width: 100%;
+                    .row__testimonial{
+                        flex-direction: column;
+                        .box__text{
+                            width: 100%;
+                            text-align: center;
+                            h1{
+                                font-size: 30px;
+                            }
+                            .rating__testimomial{
+                                .profile__rating{
+                                    width: 100%;
+                                }
+                            }
+                            .box__comment__rating{
+                               display: none;
+                            }
+                        }
+                        .box__image__testimonial{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            footer{
+                padding: 50px 10px;
+                .container__footer{
+                    width: 100%;
+                    .row__footer{
+                        flex-direction: column-reverse;
+                        .box__footer{
+                            text-align: center;
+                            margin-top: 10%;
+                        }
+                        .container__list__footer{
+                            width: 100%;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            .box__footer__list{
+                                margin-top: 5%;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:375px) {
+    body{
+        .container{
+            width: 100%;
+            position: relative;
+            overflow-x: hidden;
+            min-height: 100vh;
+            section.banner__house{
+                width: 100%;
+                .container__banner__house{
+                    width: 100%;
+                    .row__banner__house{
+                      .box__banner__house__text{
+                          width: 100%;
+                          .box__counter{
+                              width: 100%;
+                          }
+                      }  
+                    }
+                }
+            }
+        }
+    }
+}
